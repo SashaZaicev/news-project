@@ -296,16 +296,23 @@ label {
     /*}*/
 }
 
+@media screen and (max-width: 420px) {
+    .containerNewsMain {
+        width: 100%;
+        margin: 0;
+        padding: 0 9px 6px;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .menu {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .containerNewsMain {
-        width: auto;
-    }
-
+    /*.containerNewsMain {*/
+    /*    width: auto;*/
+    /*}*/
     .menu a + a {
         border: none;
         margin-top: 5px;

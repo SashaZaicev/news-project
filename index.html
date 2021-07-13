@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Autoparus.com</title>
     <!-- jQuery 1.8 or later, 33 KB -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -16,19 +18,24 @@
     <div class="logo">
         <img src="logo2.png" alt="">
     </div>
-    <!--    <div class="navicon">|||</div>-->
+<!--        <div class="navicon">|||</div>-->
     <div class="desktop">
         <nav class="menu">
-            <a href="#">Лента публикаций | </a>
-            <a href="#">Разместить информацию | </a>
+            <a href="#">Лента публикаций</a>
+            <a href="#">Разместить информацию</a>
             <a href="#">О нас</a>
         </nav>
     </div>
 </header>
 <main class="main">
     <div class="fotorama" data-loop="true" data-nav="thumbs"
-         data-height="250px" data-width="100% ">
-        <!--        <a href="http://youtube.com/watch?v=C3lWwBslWqg">Desert Rose</a>-->
+         data-width="100%"
+         data-ratio="1200/800"
+         data-minwidth="300"
+         data-maxwidth="1200"
+         data-minheight="200"
+         data-maxheight="100%">
+        <a href="http://youtube.com/watch?v=C3lWwBslWqg">Desert Rose</a>
         <img src="https://s.fotorama.io/1.jpg" alt="someImage"
              data-caption="Заголовок и некоторый текст">
         <img src="https://s.fotorama.io/2.jpg" alt="someImage"
@@ -41,7 +48,8 @@
                 <h4>Title</h4>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Ad animi corporis dolorum laudantium magnam omnis, perspiciatis
-                possimus repudiandae sequi voluptas.</span>
+                possimus repudiandae sequi voluptas. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Atque earum natus necessitatibus nesciunt nihil possimus rem soluta tempore. Accusantium aliquid debitis delectus eaque earum inventore molestias nam officiis? Quibusdam, voluptatibus?</span>
             </div>
         </div>
         <div class="containerNewsMain">
@@ -69,12 +77,40 @@
                 <img src="logo.png" alt="">
                 <h2>Some Title</h2>
             </div>
-            <div class="bodyNewsThirdBlock"><img src="./images/news-image.png" alt="\"></div>
+            <div class="bodyNewsThirdBlock">
+                <img src="./images/news-image.png" alt="\"></div>
             <div class="descriptionNewsBlock">
                 <h3>Some Title Some Title Some Title</h3>
                 <h4>Second Title </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, illo vero? At eveniet nam
-                    nulla!</p>
+                <input type="checkbox" id="expanded">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, illo vero? At
+                    eveniet nam
+                    nulla! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias amet animi atque
+                    consequuntur culpa cum debitis dicta dolorem dolores eius inventore, itaque laudantium maxime
+                    molestiae numquam odit omnis optio perspiciatis placeat provident quaerat, quidem quo quod rerum
+                    saepe sequi similique soluta totam vero. Doloribus explicabo hic mollitia ratione velit. A animi
+                    architecto blanditiis consequuntur corporis dolore dolores eaque ex hic ipsam nihil nobis optio,
+                    perferendis placeat provident quae quam qui repudiandae saepe sunt ullam, unde voluptates
+                    voluptatum. Laudantium non quisquam quos temporibus! Autem cum debitis enim nam nostrum quibusdam
+                    quo velit voluptatibus? Aliquam aperiam aspernatur cumque eaque harum inventore, magnam maiores
+                    maxime molestiae mollitia nihil nisi non officia optio praesentium quibusdam ratione, sed tenetur.
+                    Ab aliquam aliquid aspernatur eaque eius, excepturi explicabo facere itaque laudantium libero
+                    molestias necessitatibus neque perferendis perspiciatis rem sit veniam. Blanditiis, impedit in. Ad
+                    dicta dolorem eaque eos et in laborum mollitia obcaecati similique voluptates! Alias blanditiis,
+                    commodi corporis deleniti dolor dolores dolorum ea, error ex facilis, ipsam molestiae odio placeat
+                    quam rem rerum sit. Accusamus exercitationem explicabo hic ipsa perferendis quis quos repellat! Aut
+                    consequuntur culpa dolor dolore impedit ratione similique sint soluta tempore temporibus.
+                    Consectetur consequatur cupiditate dignissimos in ipsum iusto modi mollitia reiciendis saepe veniam.
+                    Culpa, mollitia natus officiis optio quidem sed sit tempora totam. Adipisci aliquam cum deleniti
+                    dignissimos dolore, doloremque dolores dolorum ducimus eius eos error eveniet impedit ipsa itaque
+                    laudantium, libero molestiae mollitia natus nemo neque nobis nostrum pariatur quaerat quia quidem
+                    repellat, sed sint unde velit voluptates? Amet assumenda at, atque autem beatae cum cupiditate dicta
+                    distinctio dolorem earum error ipsum iste libero, magnam maiores minus molestias nisi nostrum,
+                    numquam perferendis quas quibusdam quo repellat repellendus sapiente sequi sunt tempore vero
+                    voluptatem voluptates. Aspernatur, dignissimos mollitia! Ab aliquid eveniet facere mollitia,
+                    officiis omnis quasi rerum tempore totam ut?
+                </div>
+                <label for="expanded" role="button">Подробнее...</label>
                 <span>Data</span>
             </div>
         </div>
@@ -83,12 +119,40 @@
                 <img src="logo.png" alt="">
                 <h2>Some Title</h2>
             </div>
-            <div class="bodyNewsThirdBlock"><img src="./images/news-image.png" alt="\"></div>
+            <div class="bodyNewsThirdBlock">
+                <img src="./images/news-image.png" alt="\"></div>
             <div class="descriptionNewsBlock">
                 <h3>Some Title Some Title Some Title</h3>
                 <h4>Second Title </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, illo vero? At eveniet nam
-                    nulla!</p>
+                <input type="checkbox" id="expanded2">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, illo vero? At
+                    eveniet nam
+                    nulla! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias amet animi atque
+                    consequuntur culpa cum debitis dicta dolorem dolores eius inventore, itaque laudantium maxime
+                    molestiae numquam odit omnis optio perspiciatis placeat provident quaerat, quidem quo quod rerum
+                    saepe sequi similique soluta totam vero. Doloribus explicabo hic mollitia ratione velit. A animi
+                    architecto blanditiis consequuntur corporis dolore dolores eaque ex hic ipsam nihil nobis optio,
+                    perferendis placeat provident quae quam qui repudiandae saepe sunt ullam, unde voluptates
+                    voluptatum. Laudantium non quisquam quos temporibus! Autem cum debitis enim nam nostrum quibusdam
+                    quo velit voluptatibus? Aliquam aperiam aspernatur cumque eaque harum inventore, magnam maiores
+                    maxime molestiae mollitia nihil nisi non officia optio praesentium quibusdam ratione, sed tenetur.
+                    Ab aliquam aliquid aspernatur eaque eius, excepturi explicabo facere itaque laudantium libero
+                    molestias necessitatibus neque perferendis perspiciatis rem sit veniam. Blanditiis, impedit in. Ad
+                    dicta dolorem eaque eos et in laborum mollitia obcaecati similique voluptates! Alias blanditiis,
+                    commodi corporis deleniti dolor dolores dolorum ea, error ex facilis, ipsam molestiae odio placeat
+                    quam rem rerum sit. Accusamus exercitationem explicabo hic ipsa perferendis quis quos repellat! Aut
+                    consequuntur culpa dolor dolore impedit ratione similique sint soluta tempore temporibus.
+                    Consectetur consequatur cupiditate dignissimos in ipsum iusto modi mollitia reiciendis saepe veniam.
+                    Culpa, mollitia natus officiis optio quidem sed sit tempora totam. Adipisci aliquam cum deleniti
+                    dignissimos dolore, doloremque dolores dolorum ducimus eius eos error eveniet impedit ipsa itaque
+                    laudantium, libero molestiae mollitia natus nemo neque nobis nostrum pariatur quaerat quia quidem
+                    repellat, sed sint unde velit voluptates? Amet assumenda at, atque autem beatae cum cupiditate dicta
+                    distinctio dolorem earum error ipsum iste libero, magnam maiores minus molestias nisi nostrum,
+                    numquam perferendis quas quibusdam quo repellat repellendus sapiente sequi sunt tempore vero
+                    voluptatem voluptates. Aspernatur, dignissimos mollitia! Ab aliquid eveniet facere mollitia,
+                    officiis omnis quasi rerum tempore totam ut?
+                </div>
+                <label for="expanded2" role="button">Подробнее...</label>
                 <span>Data</span>
             </div>
         </div>
@@ -100,7 +164,7 @@
 <!--</footer>-->
 <script>
     var selectLi = $('a');
-    $(selectLi).click(function() {
+    $(selectLi).click(function () {
         $('a').removeClass('active');
         $(this).addClass('active');
     })
